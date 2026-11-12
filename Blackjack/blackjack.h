@@ -1,5 +1,7 @@
 #pragma once
 
+#include <vector>
+
 class Card {
 private:
     const char *rank;
@@ -16,4 +18,7 @@ public:
 
     void setRank(const char *rank) { this->rank = rank; }
     void setSuit(const char *suit) { this->suit = suit; }
+
+    static void setDeck(std::vector<Card>& deck);
 };
+

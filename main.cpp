@@ -1,6 +1,8 @@
 #include <SFML/Graphics.hpp>
 #include <optional>
 
+
+
 int main() {
 	sf::RenderWindow window(sf::VideoMode({ 800, 600 }), "High Stakes Casino");
 
