@@ -1,4 +1,5 @@
 #include "blackjack.h"
+#include "../includes.h"
 
 int Card::cardCount = 0;
 std::vector<Card> drawnCards;

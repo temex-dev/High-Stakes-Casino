@@ -9,6 +9,7 @@ find_package(SFML 3 COMPONENTS Graphics Window System REQUIRED)
 add_executable(casino
     main.cpp
     Blackjack/blackjack.cpp
+    main_menu.cpp
 )
 
 target_include_directories(casino PRIVATE ${CMAKE_SOURCE_DIR})

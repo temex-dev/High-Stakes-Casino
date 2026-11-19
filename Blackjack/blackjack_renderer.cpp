@@ -1,8 +1,6 @@
 #pragma once
 
-#include <SFML/Graphics.hpp>
-#include <bits/stdc++.h>
-#include <vector>
+#include "../includes.h"
 #include "blackjack.h"
 
 struct item {

@@ -1,10 +1,9 @@
-#include <SFML/Graphics.hpp>
-#include <optional>
-
-
+#include "includes.h"
+#include "main_menu.h"
+#include <SFML/Window/WindowEnums.hpp>
 
 int main() {
-	sf::RenderWindow window(sf::VideoMode({ 800, 600 }), "High Stakes Casino");
+	sf::RenderWindow window(sf::VideoMode({ WINDOW_WIDTH, WINDOW_HEIGHT }), "High Stakes Casino", sf::Style::Close, sf::State::Windowed);
 
 	while (window.isOpen()) {
 		while (const std::optional event = window.pollEvent()) {
@@ -13,6 +12,7 @@ int main() {
 		}
 
 		window.clear(sf::Color(0, 100, 0));
+		mainMenu(&window);
 		window.display();
 	}
 
