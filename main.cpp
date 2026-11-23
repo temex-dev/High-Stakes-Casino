@@ -1,6 +1,5 @@
 #include "includes.h"
 #include "main_menu.h"
-#include <SFML/Window/WindowEnums.hpp>
 
 int main() {
 	sf::RenderWindow window(sf::VideoMode({ WINDOW_WIDTH, WINDOW_HEIGHT }), "High Stakes Casino", sf::Style::Close, sf::State::Windowed);

@@ -1,7 +1,9 @@
 #pragma once
 
-#include "../includes.h"
-#include "blackjack.h"
+#include <optional>
+#include <bits/stdc++.h>
+#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
 
 struct item {
     const char name;

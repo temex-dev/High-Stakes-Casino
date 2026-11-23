@@ -1,8 +1,5 @@
-#include "includes.h"
-#include <SFML/Graphics/RectangleShape.hpp>
-#include <SFML/System/Sleep.hpp>
-#include <SFML/System/Time.hpp>
 #include "main_menu.h"
+#include <bits/stdc++.h>
 
 sf::Font font("../src/rooster.ttf");
 

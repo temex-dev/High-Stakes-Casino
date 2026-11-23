@@ -1,6 +1,7 @@
 #pragma once
 
 #include "includes.h"
+#include <SFML/Graphics.hpp>
 
 void welcome_text(
     sf::RenderWindow *window,

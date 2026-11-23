@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../includes.h"
+#include <vector>
 
 class Card {
 private:
