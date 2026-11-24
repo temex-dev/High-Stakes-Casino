@@ -1,7 +1,6 @@
 #pragma once
 
 #include "includes.h"
-#include <SFML/Graphics/RectangleShape.hpp>
 #include <algorithm>
 #include <SFML/Graphics.hpp>
 
