@@ -2,6 +2,10 @@
 #include "main_menu.h"
 
 int main() {
+	sf::ContextSettings settings;
+	settings.antiAliasingLevel = 0;
+
+
 	sf::RenderWindow window(sf::VideoMode({ WINDOW_WIDTH, WINDOW_HEIGHT }), "High Stakes Casino", sf::Style::Close, sf::State::Windowed);
 
 	while (window.isOpen()) {
