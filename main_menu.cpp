@@ -3,6 +3,7 @@
 #include <SFML/Graphics/RectangleShape.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/System/Vector2.hpp>
+#include <SFML/Window/Mouse.hpp>
 
 sf::Font font_welcome("../src/rooster.ttf");
 sf::Font font_btn("../src/quip.otf");
@@ -58,8 +59,14 @@ void animate_buttons(sf::RenderWindow *window, sf::Vector2f startPos, sf::Vector
     window->draw(text);
 }
 
-void mainMenu(sf::RenderWindow *window) {
+std::vector<Button> mainMenu(sf::RenderWindow *window) {
+    std::vector<Button> buttons;
     animate_welcome_text(window, "High Stakes Casino", -100.f, 10.f);
 
-    animate_buttons(window, {450.f, WINDOW_HEIGHT + 100.f}, {450.f, WINDOW_HEIGHT - 100.f }, "test");
+    Button btn1{ "test", {450.f, WINDOW_HEIGHT + 100.f }, { 450.f, WINDOW_HEIGHT - 100.f } };
+    buttons.push_back(btn1);
+
+    animate_buttons(window, btn1.startPos, btn1.endPos, btn1.text);
+
+    return buttons;
 }
